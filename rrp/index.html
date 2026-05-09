@@ -251,18 +251,18 @@
  
   document.querySelectorAll('a, button, .member-card').forEach(el => {
     el.addEventListener('mouseenter', () => {
-      cursor.style.width = '38px';
-      cursor.style.height = '46px';
-      cursor.style.transform = 'translate(-50%, -50%) rotate(15deg)';
-      ring.style.width = '60px';
+      cursor.style.width = '14px';
+      cursor.style.height = '14px';
+      ring.style.width = '50px';
       ring.style.height = '60px';
+      ring.style.transform = 'translate(-50%, -50%) rotate(15deg)';
     });
     el.addEventListener('mouseleave', () => {
-      cursor.style.width = '28px';
-      cursor.style.height = '34px';
-      cursor.style.transform = 'translate(-50%, -50%) rotate(0deg)';
-      ring.style.width = '44px';
+      cursor.style.width = '10px';
+      cursor.style.height = '10px';
+      ring.style.width = '36px';
       ring.style.height = '44px';
+      ring.style.transform = 'translate(-50%, -50%) rotate(0deg)';
     });
   });
  
