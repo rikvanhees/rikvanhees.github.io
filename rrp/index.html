@@ -5,30 +5,30 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ricky's Rock Party — Official Site</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
- 
+
 <div class="cursor" id="cursor"></div>
 <div class="cursor-ring" id="cursorRing"></div>
- 
+
 <!-- NAV -->
 <nav>
   <a href="#hero" class="nav-logo">RRP</a>
   <ul class="nav-links">
-    <li><a href="#about">Over ons</a></li>
-    <li><a href="#members">Band</a></li>
+    <li><a href="#about">The Experience</a></li>
+    <li><a href="#members">The Night</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
- 
+
 <!-- HERO -->
 <section id="hero">
   <div class="hero-visual-placeholder"></div>
   <!-- Vervang onderstaande regel door: <img class="hero-img" src="jouw-foto.jpg" alt="Band hero"> -->
   <div class="hero-bg"></div>
- 
+
   <div class="hero-content">
     <div class="hero-logo-wrap" id="heroLogoWrap">
       <div class="hero-plectrum-wrap" id="heroPlectrum">
@@ -44,18 +44,19 @@
       </div>
     </div>
     <p class="hero-sub">Vier muzikanten. Één geluid. Onverbiddelijk.</p>
+    <p class="hero-sub">Vier muzikanten. Één nacht. Onverbiddelijk.</p>
     <a href="#contact" class="hero-cta">
-      Boek ons
+      Reservations
       <span class="hero-cta-icon"></span>
     </a>
   </div>
- 
+
   <div class="hero-scroll">
     <span>Scroll</span>
     <div class="scroll-line"></div>
   </div>
 </section>
- 
+
 <!-- ABOUT -->
 <section id="about">
   <div class="about-inner">
@@ -64,7 +65,7 @@
       <h2 class="section-title">OVER<br>DE BAND</h2>
       <p>Vervang dit met de biografie van je band. Vertel hier wie jullie zijn, waar jullie vandaan komen en wat jullie muziek zo uniek maakt.</p>
       <p>Beschrijf jullie geluid, jullie energie op het podium en wat jullie onderscheidt van anderen. <strong>Rauw. Eerlijk. Onvergetelijk.</strong></p>
- 
+
       <div class="about-stats">
         <div>
           <div class="stat-num">12</div>
@@ -84,7 +85,7 @@
         </div>
       </div>
     </div>
- 
+
     <div class="about-visual reveal reveal-delay-2">
       <div class="about-img-wrap">
         <div class="about-img-placeholder">
@@ -97,7 +98,7 @@
     </div>
   </div>
 </section>
- 
+
 <!-- MEMBERS -->
 <section id="members" style="padding-left:0; padding-right:0;">
   <div class="members-inner">
@@ -105,9 +106,9 @@
       <div class="section-label reveal">De band</div>
       <h2 class="section-title reveal reveal-delay-1">BAND<br>LEDEN</h2>
     </div>
- 
+
     <div class="members-grid">
- 
+
       <!-- Lid 1 -->
       <div class="member-card">
         <div class="member-img-placeholder">
@@ -121,7 +122,7 @@
           <p class="member-bio">Korte bio van dit bandlid. Vertel iets over hun achtergrond en stijl.</p>
         </div>
       </div>
- 
+
       <!-- Lid 2 -->
       <div class="member-card">
         <div class="member-img-placeholder">
@@ -135,7 +136,7 @@
           <p class="member-bio">Korte bio van dit bandlid. Vertel iets over hun achtergrond en stijl.</p>
         </div>
       </div>
- 
+
       <!-- Lid 3 -->
       <div class="member-card">
         <div class="member-img-placeholder">
@@ -149,7 +150,7 @@
           <p class="member-bio">Korte bio van dit bandlid. Vertel iets over hun achtergrond en stijl.</p>
         </div>
       </div>
- 
+
       <!-- Lid 4 -->
       <div class="member-card">
         <div class="member-img-placeholder">
@@ -163,11 +164,11 @@
           <p class="member-bio">Korte bio van dit bandlid. Vertel iets over hun achtergrond en stijl.</p>
         </div>
       </div>
- 
+
     </div>
   </div>
 </section>
- 
+
 <!-- CONTACT -->
 <section id="contact">
   <div class="contact-inner">
@@ -175,7 +176,7 @@
       <div class="section-label">Boekingen & info</div>
       <h2 class="section-title">CON<br>TACT</h2>
       <p>Wil je ons boeken voor een festival, concert of privé-evenement? Stuur ons een bericht.</p>
- 
+
       <div class="contact-detail">
         <div class="contact-detail-label">E-mail</div>
         <div class="contact-detail-value">info@bandnaam.nl</div>
@@ -189,7 +190,7 @@
         <div class="contact-detail-value">Amsterdam, Nederland</div>
       </div>
     </div>
- 
+
     <div class="reveal reveal-delay-2">
       <form class="contact-form" id="contactForm">
         <div class="form-group">
@@ -224,7 +225,7 @@
     </div>
   </div>
 </section>
- 
+
 <!-- FOOTER -->
 <footer>
   <div class="footer-logo">BANDNAAM</div>
@@ -235,19 +236,19 @@
     <a href="#">Spotify</a>
   </div>
 </footer>
- 
+
 <script>
   // Custom cursor
   const cursor = document.getElementById('cursor');
   const ring = document.getElementById('cursorRing');
   let mx = 0, my = 0, rx = 0, ry = 0;
- 
+
   document.addEventListener('mousemove', e => {
     mx = e.clientX; my = e.clientY;
     cursor.style.left = mx + 'px';
     cursor.style.top = my + 'px';
   });
- 
+
   function animateRing() {
     rx += (mx - rx) * 0.12;
     ry += (my - ry) * 0.12;
@@ -256,7 +257,7 @@
     requestAnimationFrame(animateRing);
   }
   animateRing();
- 
+
   document.querySelectorAll('a, button, .member-card').forEach(el => {
     el.addEventListener('mouseenter', () => {
       cursor.style.width = '14px';
@@ -273,7 +274,7 @@
       ring.style.transform = 'translate(-50%, -50%) rotate(0deg)';
     });
   });
- 
+
   // Scroll reveal
   const reveals = document.querySelectorAll('.reveal');
   const observer = new IntersectionObserver(entries => {
@@ -284,19 +285,19 @@
       }
     });
   }, { threshold: 0.15 });
- 
+
   reveals.forEach(el => observer.observe(el));
- 
+
   // Nav opacity on scroll
   const nav = document.querySelector('nav');
   window.addEventListener('scroll', () => {
     if (window.scrollY > 80) {
-      nav.style.background = 'rgba(3,30,47,0.97)';
+      nav.style.background = 'rgba(10,10,10,0.97)';
     } else {
-      nav.style.background = 'linear-gradient(to bottom, rgba(3,30,47,0.95) 0%, rgba(3,30,47,0) 100%)';
+      nav.style.background = 'linear-gradient(to bottom, rgba(10,10,10,0.95) 0%, transparent 100%)';
     }
   });
- 
+
   // Form submit
   document.getElementById('contactForm').addEventListener('submit', function(e) {
     e.preventDefault();
@@ -307,7 +308,7 @@
     document.getElementById('formSuccess').style.display = 'block';
     this.reset();
   });
- 
+
   // Parallax hero subtle
   window.addEventListener('scroll', () => {
     const y = window.scrollY;
@@ -317,7 +318,7 @@
       heroContent.style.opacity = 1 - y / 600;
     }
   });
- 
+
   // =====================
   // RICKYS ROCK PARTY LOGO
   // =====================
@@ -333,10 +334,10 @@
       { family: 'Trebuchet MS, sans-serif', style: 'normal', weight: '700' },
     ];
     const FINAL = FONTS[0];
- 
+
     const rickys = ['R','I','C','K','Y','S'];
     const rockparty = ['R','O','C','K','P','A','R','T','Y'];
- 
+
     function calcSizes() {
       var vw = window.innerWidth;
       var totalW = Math.min(vw * 0.88, 720);
@@ -351,26 +352,26 @@
       var ph = Math.round(pw * 1.2);
       return { W1, H1, fs1, y1, lw, lh, fs2, pw, ph };
     }
- 
+
     function makeL(ch, f, W1, H1, fs1, y1) {
-      return '<svg viewBox="0 0 ' + W1 + ' ' + H1 + '" width="' + W1 + '" height="' + H1 + '"><text x="50%" y="' + y1 + '" text-anchor="middle" font-size="' + fs1 + '" font-family="' + f.family + '" font-style="' + f.style + '" font-weight="' + f.weight + '" fill="#9b1889">' + ch + '</text></svg>';
+      return '<svg viewBox="0 0 ' + W1 + ' ' + H1 + '" width="' + W1 + '" height="' + H1 + '"><text x="50%" y="' + y1 + '" text-anchor="middle" font-size="' + fs1 + '" font-family="' + f.family + '" font-style="' + f.style + '" font-weight="' + f.weight + '" fill="#b52d8f">' + ch + '</text></svg>';
     }
- 
+
     const line1 = document.getElementById('heroLine1');
     const line2 = document.getElementById('heroLine2');
     const logoInner = document.getElementById('heroLogoInner');
     const plectrumWrap = document.getElementById('heroPlectrum');
- 
+
     const slots = [];
     const curFont = rickys.map(() => 0);
     var sizes = calcSizes();
- 
+
     function buildLogo() {
       sizes = calcSizes();
       line1.innerHTML = '';
       line2.innerHTML = '';
       slots.length = 0;
- 
+
       rickys.forEach(function(ch, i) {
         var slot = document.createElement('div');
         slot.className = 'hero-letter-slot';
@@ -380,27 +381,27 @@
         line1.appendChild(slot);
         slots.push(slot);
       });
- 
+
       rockparty.forEach(function(ch) {
         var slot = document.createElement('div');
         slot.className = 'hero-letter-slot';
         slot.style.width = sizes.lw + 'px';
         slot.style.height = sizes.lh + 'px';
-        slot.innerHTML = '<svg viewBox="0 0 ' + sizes.lw + ' ' + sizes.lh + '" width="' + sizes.lw + '" height="' + sizes.lh + '"><text x="50%" y="' + (sizes.lh - 8) + '" text-anchor="middle" font-size="' + sizes.fs2 + '" font-family="Impact, Arial Narrow, sans-serif" font-weight="900" fill="#9b1889">' + ch + '</text></svg>';
+        slot.innerHTML = '<svg viewBox="0 0 ' + sizes.lw + ' ' + sizes.lh + '" width="' + sizes.lw + '" height="' + sizes.lh + '"><text x="50%" y="' + (sizes.lh - 8) + '" text-anchor="middle" font-size="' + sizes.fs2 + '" font-family="Impact, Arial Narrow, sans-serif" font-weight="900" fill="#b52d8f">' + ch + '</text></svg>';
         line2.appendChild(slot);
       });
- 
+
       var plSvg = plectrumWrap.querySelector('svg');
       if (plSvg) { plSvg.setAttribute('width', sizes.pw); plSvg.setAttribute('height', sizes.ph); }
     }
- 
+
     buildLogo();
     var resizeTimer;
     window.addEventListener('resize', function() {
       clearTimeout(resizeTimer);
       resizeTimer = setTimeout(buildLogo, 150);
     });
- 
+
     function swapLetter(i, fontIdx) {
       var ch = rickys[i];
       var next = fontIdx !== undefined ? fontIdx : Math.floor(Math.random() * FONTS.length);
@@ -411,14 +412,14 @@
         slots[i].classList.remove('swapping');
       }, 80);
     }
- 
+
     var introTimers = [];
     var rafId = null;
     var heartbeatTimer = null;
     var hbActive = false;
     var hbStart = 0;
     var liveStart = 0;
- 
+
     function scheduleHeartbeat() {
       if (heartbeatTimer) clearTimeout(heartbeatTimer);
       var delay = 4000 + Math.random() * 6000;
@@ -428,7 +429,7 @@
         scheduleHeartbeat();
       }, delay);
     }
- 
+
     function getHBScale(now) {
       if (!hbActive) return 1;
       var elapsed = (now - hbStart) / 1000;
@@ -442,7 +443,7 @@
       }
       return scale;
     }
- 
+
     function animateLogo() {
       rafId = requestAnimationFrame(animateLogo);
       var now = performance.now();
@@ -458,7 +459,7 @@
       var hb = getHBScale(now);
       plectrumWrap.style.transform = 'translate(' + px + 'px,' + py + 'px) rotate(' + prot + 'deg) scale(' + (breathe * hb) + ')';
     }
- 
+
     function stopLiving() {
       if (rafId) cancelAnimationFrame(rafId);
       if (heartbeatTimer) clearTimeout(heartbeatTimer);
@@ -466,24 +467,24 @@
       logoInner.style.transform = '';
       plectrumWrap.style.transform = '';
     }
- 
+
     function startLiving() {
       liveStart = performance.now();
       animateLogo();
       scheduleHeartbeat();
     }
- 
+
     function runIntro() {
       introTimers.forEach(function(t) { clearTimeout(t); });
       introTimers = [];
       stopLiving();
       rickys.forEach(function(_, i) { slots[i].innerHTML = makeL(rickys[i], FINAL, sizes.W1, sizes.H1, sizes.fs1, sizes.y1); });
- 
+
       var t = 0;
       var intervals = [60,60,80,80,100,120,150,180,220,270,330,400,500,650,850];
       introTimers.push(setTimeout(function() {}, 200));
       t += 400;
- 
+
       intervals.forEach(function(gap, round) {
         introTimers.push(setTimeout(function() {
           var count = round < 6 ? 6 : round < 10 ? 3 : round < 13 ? 2 : 1;
@@ -492,15 +493,15 @@
         }, t));
         t += gap;
       });
- 
+
       rickys.forEach(function(_, i) {
         introTimers.push(setTimeout(function() { swapLetter(i, 0); }, t + i * 60));
       });
       t += rickys.length * 60 + 300;
- 
+
       introTimers.push(setTimeout(startLiving, t));
     }
- 
+
     // start intro after page load settle
     setTimeout(runIntro, 600);
   })();
