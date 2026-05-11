@@ -359,13 +359,13 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(192,57,43,0.15) 0%, transparent 60%);
+    background: linear-gradient(135deg, rgba(155,24,137,0.15) 0%, transparent 60%);
     z-index: 1;
   }
  
   .about-img-placeholder {
     width: 100%; height: 100%;
-    background: #111;
+    background: #031e2f;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -399,7 +399,7 @@
  
   /* MEMBERS */
   #members {
-    background: #0d0d0d;
+    background: #031e2f;
   }
  
   .members-inner {
@@ -422,7 +422,7 @@
  
   .member-img-placeholder {
     width: 100%; height: 100%;
-    background: #111;
+    background: #031e2f;
     display: flex;
     align-items: flex-end;
     padding: 0 0 2rem 1.5rem;
@@ -584,7 +584,7 @@
     -webkit-appearance: none;
   }
  
-  .form-group select option { background: #111; }
+  .form-group select option { background: #031e2f; }
  
   .form-group input:focus,
   .form-group textarea:focus,
