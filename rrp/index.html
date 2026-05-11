@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ricky's Rock Party — Official Site</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,8 +17,8 @@
 <nav>
   <a href="#hero" class="nav-logo">RRP</a>
   <ul class="nav-links">
-    <li><a href="#about">The Experience</a></li>
-    <li><a href="#members">The Night</a></li>
+    <li><a href="#about">Over ons</a></li>
+    <li><a href="#members">Band</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
@@ -43,9 +43,9 @@
         <div class="hero-line2" id="heroLine2"></div>
       </div>
     </div>
-    <p class="hero-sub">Vier muzikanten. Één nacht. Onverbiddelijk.</p>
+    <p class="hero-sub">Vier muzikanten. Één geluid. Onverbiddelijk.</p>
     <a href="#contact" class="hero-cta">
-      Reservations
+      Boek ons
       <span class="hero-cta-icon"></span>
     </a>
   </div>
@@ -291,7 +291,7 @@
   const nav = document.querySelector('nav');
   window.addEventListener('scroll', () => {
     if (window.scrollY > 80) {
-      nav.style.background = 'rgba(10,10,10,0.97)';
+      nav.style.background = 'rgba(3,30,47,0.97)';
     } else {
       nav.style.background = 'linear-gradient(to bottom, rgba(10,10,10,0.95) 0%, transparent 100%)';
     }
@@ -353,7 +353,7 @@
     }
  
     function makeL(ch, f, W1, H1, fs1, y1) {
-      return '<svg viewBox="0 0 ' + W1 + ' ' + H1 + '" width="' + W1 + '" height="' + H1 + '"><text x="50%" y="' + y1 + '" text-anchor="middle" font-size="' + fs1 + '" font-family="' + f.family + '" font-style="' + f.style + '" font-weight="' + f.weight + '" fill="#b52d8f">' + ch + '</text></svg>';
+      return '<svg viewBox="0 0 ' + W1 + ' ' + H1 + '" width="' + W1 + '" height="' + H1 + '"><text x="50%" y="' + y1 + '" text-anchor="middle" font-size="' + fs1 + '" font-family="' + f.family + '" font-style="' + f.style + '" font-weight="' + f.weight + '" fill="#9b1889">' + ch + '</text></svg>';
     }
  
     const line1 = document.getElementById('heroLine1');
@@ -386,7 +386,7 @@
         slot.className = 'hero-letter-slot';
         slot.style.width = sizes.lw + 'px';
         slot.style.height = sizes.lh + 'px';
-        slot.innerHTML = '<svg viewBox="0 0 ' + sizes.lw + ' ' + sizes.lh + '" width="' + sizes.lw + '" height="' + sizes.lh + '"><text x="50%" y="' + (sizes.lh - 8) + '" text-anchor="middle" font-size="' + sizes.fs2 + '" font-family="Impact, Arial Narrow, sans-serif" font-weight="900" fill="#b52d8f">' + ch + '</text></svg>';
+        slot.innerHTML = '<svg viewBox="0 0 ' + sizes.lw + ' ' + sizes.lh + '" width="' + sizes.lw + '" height="' + sizes.lh + '"><text x="50%" y="' + (sizes.lh - 8) + '" text-anchor="middle" font-size="' + sizes.fs2 + '" font-family="Impact, Arial Narrow, sans-serif" font-weight="900" fill="#9b1889">' + ch + '</text></svg>';
         line2.appendChild(slot);
       });
  
