@@ -2,14 +2,14 @@
    BAND WEBSITE — style.css
    ============================================ */
   :root {
-    --black: #080b1a;
+    --black: #000a1b;
     --red: #b52d8f;
     --red-dark: #7d1f63;
     --off-white: #e8e4dc;
     --mid-gray: #444;
     --light-gray: #888;
     --font-display: 'Bebas Neue', sans-serif;
-    --font-body: 'Barlow', sans-serif;
+    --font-body: 'Bebas Neue', sans-serif;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -57,7 +57,7 @@
     justify-content: space-between;
     align-items: center;
     mix-blend-mode: normal;
-    background: linear-gradient(to bottom, rgba(10,10,10,0.95) 0%, transparent 100%);
+    background: linear-gradient(to bottom, rgba(0,10,27,0.95) 0%, transparent 100%);
   }
 
   .nav-logo {
@@ -114,8 +114,8 @@
     position: absolute;
     inset: 0;
     background: 
-      linear-gradient(to right, rgba(10,10,10,0.9) 40%, transparent 100%),
-      linear-gradient(to top, rgba(10,10,10,1) 0%, transparent 50%);
+      linear-gradient(to right, rgba(0,10,27,0.9) 40%, transparent 100%),
+      linear-gradient(to top, rgba(0,10,27,1) 0%, transparent 50%);
     z-index: 1;
   }
 
@@ -309,6 +309,8 @@
   .about-text p {
     font-size: 1.05rem;
     line-height: 1.9;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.08em;
     color: #aaa;
     margin-bottom: 1.5rem;
   }
@@ -338,6 +340,7 @@
   .stat-label {
     font-size: 0.7rem;
     font-weight: 600;
+    font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 0.25em;
     text-transform: uppercase;
     color: var(--light-gray);
@@ -364,7 +367,7 @@
 
   .about-img-placeholder {
     width: 100%; height: 100%;
-    background: #111;
+    background: #000a1b;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -398,7 +401,7 @@
 
   /* MEMBERS */
   #members {
-    background: #0d0d0d;
+    background: #000a1b;
   }
 
   .members-inner {
@@ -421,7 +424,7 @@
 
   .member-img-placeholder {
     width: 100%; height: 100%;
-    background: #111;
+    background: #000a1b;
     display: flex;
     align-items: flex-end;
     padding: 0 0 2rem 1.5rem;
@@ -440,12 +443,12 @@
   .member-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(10,10,10,0.95) 0%, rgba(10,10,10,0.1) 60%, transparent 100%);
+    background: linear-gradient(to top, rgba(0,10,27,0.95) 0%, rgba(0,10,27,0.1) 60%, transparent 100%);
     transition: opacity 0.4s;
   }
 
   .member-card:hover .member-overlay {
-    background: linear-gradient(to top, rgba(125,31,99,0.85) 0%, rgba(8,11,26,0.5) 60%, transparent 100%);
+    background: linear-gradient(to top, rgba(125,31,99,0.85) 0%, rgba(0,10,27,0.5) 60%, transparent 100%);
   }
 
   .member-card:hover img {
@@ -486,6 +489,8 @@
   .member-bio {
     font-size: 0.85rem;
     line-height: 1.7;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.08em;
     color: rgba(232,228,220,0.7);
     opacity: 0;
     transition: opacity 0.3s 0.1s;
@@ -524,6 +529,8 @@
   .contact-info p {
     font-size: 1rem;
     line-height: 1.9;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.08em;
     color: #888;
     margin-bottom: 2.5rem;
   }
@@ -543,6 +550,8 @@
 
   .contact-detail-value {
     font-size: 0.95rem;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.08em;
     color: var(--off-white);
   }
 
@@ -561,6 +570,7 @@
   .form-group label {
     font-size: 0.65rem;
     font-weight: 600;
+    font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 0.3em;
     text-transform: uppercase;
     color: var(--light-gray);
@@ -574,15 +584,16 @@
     border-bottom: 1px solid rgba(255,255,255,0.12);
     padding: 0.75rem 0;
     color: var(--off-white);
-    font-family: var(--font-body);
+    font-family: 'Bebas Neue', sans-serif;
     font-size: 0.95rem;
-    font-weight: 300;
+    letter-spacing: 0.08em;
+    font-weight: 400;
     outline: none;
     transition: border-color 0.3s;
     -webkit-appearance: none;
   }
 
-  .form-group select option { background: #111; }
+  .form-group select option { background: #000a1b; }
 
   .form-group input:focus,
   .form-group textarea:focus,
@@ -606,7 +617,7 @@
     background: transparent;
     border: 1px solid rgba(232,228,220,0.25);
     color: var(--off-white);
-    font-family: var(--font-body);
+    font-family: 'Bebas Neue', sans-serif;
     font-size: 0.75rem;
     font-weight: 600;
     letter-spacing: 0.25em;
@@ -659,6 +670,7 @@
 
   .footer-copy {
     font-size: 0.7rem;
+    font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 0.15em;
     color: #333;
     text-transform: uppercase;
@@ -672,6 +684,7 @@
   .footer-socials a {
     font-size: 0.7rem;
     font-weight: 600;
+    font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: #444;
