@@ -8,8 +8,8 @@
     --off-white: #e8e4dc;
     --mid-gray: #444;
     --light-gray: #888;
-    --font-display: 'Bebas Neue', sans-serif;
-    --font-body: 'Bebas Neue', sans-serif;
+    --font-display: 'Oswald', sans-serif;
+    --font-body: 'Oswald', sans-serif;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -21,6 +21,7 @@
     color: var(--off-white);
     font-family: var(--font-body);
     font-weight: 300;
+    letter-spacing: 0.08em;
     overflow-x: hidden;
     cursor: none;
   }
@@ -36,16 +37,6 @@
     transform: translate(-50%, -50%);
     transition: transform 0.1s, width 0.2s, height 0.2s;
   }
-  .cursor-ring {
-    position: fixed;
-    width: 36px; height: 44px;
-    pointer-events: none;
-    z-index: 9998;
-    transform: translate(-50%, -50%) rotate(0deg);
-    transition: left 0.12s ease-out, top 0.12s ease-out, width 0.3s, height 0.3s, opacity 0.3s, transform 0.3s;
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 44'%3E%3Cpath d='M18 2 C9 2 2 9 2 17 C2 27 18 42 18 42 C18 42 34 27 34 17 C34 9 27 2 18 2 Z' fill='none' stroke='%23b52d8f' stroke-width='1.5'/%3E%3C/svg%3E") center/contain no-repeat;
-  }
-  body:hover .cursor-ring { opacity: 1; }
 
   /* NAV */
   nav {
@@ -75,7 +66,8 @@
   }
 
   .nav-links a {
-    font-family: var(--font-body);
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
     font-size: 0.75rem;
     font-weight: 600;
     letter-spacing: 0.2em;
@@ -203,9 +195,10 @@
     display: inline-flex;
     align-items: center;
     gap: 1rem;
-    font-size: 0.75rem;
-    font-weight: 600;
-    letter-spacing: 0.25em;
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
     color: var(--off-white);
     text-decoration: none;
@@ -283,10 +276,12 @@
   }
 
   .section-title {
-    font-family: var(--font-display);
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
     font-size: clamp(3rem, 6vw, 5.5rem);
-    letter-spacing: 0.06em;
+    letter-spacing: 0.08em;
     line-height: 0.9;
+    text-transform: uppercase;
     color: var(--off-white);
     margin-bottom: 3rem;
   }
@@ -309,7 +304,8 @@
   .about-text p {
     font-size: 1.05rem;
     line-height: 1.9;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
     letter-spacing: 0.08em;
     color: #aaa;
     margin-bottom: 1.5rem;
@@ -340,7 +336,7 @@
   .stat-label {
     font-size: 0.7rem;
     font-weight: 600;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Oswald', sans-serif;
     letter-spacing: 0.25em;
     text-transform: uppercase;
     color: var(--light-gray);
@@ -489,7 +485,8 @@
   .member-bio {
     font-size: 0.85rem;
     line-height: 1.7;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
     letter-spacing: 0.08em;
     color: rgba(232,228,220,0.7);
     opacity: 0;
@@ -529,7 +526,8 @@
   .contact-info p {
     font-size: 1rem;
     line-height: 1.9;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
     letter-spacing: 0.08em;
     color: #888;
     margin-bottom: 2.5rem;
@@ -550,7 +548,7 @@
 
   .contact-detail-value {
     font-size: 0.95rem;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Oswald', sans-serif;
     letter-spacing: 0.08em;
     color: var(--off-white);
   }
@@ -570,7 +568,7 @@
   .form-group label {
     font-size: 0.65rem;
     font-weight: 600;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Oswald', sans-serif;
     letter-spacing: 0.3em;
     text-transform: uppercase;
     color: var(--light-gray);
@@ -584,10 +582,10 @@
     border-bottom: 1px solid rgba(255,255,255,0.12);
     padding: 0.75rem 0;
     color: var(--off-white);
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-size: 0.95rem;
-    letter-spacing: 0.08em;
-    font-weight: 400;
+    letter-spacing: 0.05em;
+    font-weight: 300;
     outline: none;
     transition: border-color 0.3s;
     -webkit-appearance: none;
@@ -617,10 +615,10 @@
     background: transparent;
     border: 1px solid rgba(232,228,220,0.25);
     color: var(--off-white);
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-size: 0.75rem;
-    font-weight: 600;
-    letter-spacing: 0.25em;
+    font-weight: 700;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
     padding: 0.9rem 2rem;
     cursor: none;
@@ -670,7 +668,7 @@
 
   .footer-copy {
     font-size: 0.7rem;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Oswald', sans-serif;
     letter-spacing: 0.15em;
     color: #333;
     text-transform: uppercase;
@@ -684,7 +682,7 @@
   .footer-socials a {
     font-size: 0.7rem;
     font-weight: 600;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Oswald', sans-serif;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: #444;
@@ -735,7 +733,7 @@
     footer { flex-direction: column; gap: 1.5rem; text-align: center; }
     .hero-scroll { display: none; }
     body { cursor: auto; }
-    .cursor, .cursor-ring { display: none; }
+    .cursor { display: none; }
   }
 
   @media (max-width: 600px) {
@@ -785,4 +783,23 @@
  
   .hero-letter-slot.swapping svg {
     opacity: 0;
+  }
+
+  /* SVG LOGO */
+  .hero-logo-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    will-change: transform;
+  }
+
+  .hero-svg-logo {
+    width: min(80vw, 460px);
+  }
+
+  .hero-svg-logo svg {
+    width: 100%;
+    height: auto;
+    display: block;
   }
